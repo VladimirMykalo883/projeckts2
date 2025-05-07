@@ -13,7 +13,7 @@ def get_mask_card_number(card_number: str) -> str:
     """Функция вводит номер карты, проверяет и выводит маску карты"""
     card_number = card_number.replace(" ", "")
     # проверяем хватает цифр в номере карты
-    print(card_number)
+
     if len(card_number) != 16 or not card_number.isdigit():
         # проверяем правильно ли набран номер карты и все ли символы цифры
         return "Введен неверный номер карты"

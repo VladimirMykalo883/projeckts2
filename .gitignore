@@ -1,0 +1,7 @@
+# created by virtualenv automatically
+.venv/pyvenv.cfg
+.idea
+.flake8
+src/__init__.py
+src/__pycache__/
+

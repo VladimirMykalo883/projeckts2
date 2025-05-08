@@ -1,4 +1,4 @@
-def get_mask_account(card_account: str):
+def get_mask_account(card_account: str) -> str:
     """Функция получает номер счета и выводит 2"*" и 4 последние цифры"""
 
     card_account = card_account.replace(" ", "")

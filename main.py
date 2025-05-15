@@ -20,8 +20,12 @@ operations_list = [
     {"id": 615064591, "state": "CANCELED", "date": "2018-10-14T08:21:33.419441"},
     {"id": 623454892, "state": "EXECUTED", "date": "2018-11-16T08:23:53.419441"},
 ]
+state_key = input("Введите значение state")
+if not state_key.isalpha():
+    state_key = "EXECUTED"
+# переходим в модуль processing.py   с возможностью поменять ключ фильтрации
 
-filtered = filter_by_state(operations_list, "EXECUTED")
+filtered = filter_by_state(operations_list, state := state_key)
 
 sorted_operations = sort_by_date(filtered)
 

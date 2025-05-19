@@ -25,7 +25,3 @@ def test_get_masks_account(value, expected):
                          ])
 def test_get_mask_card_number(value, expected):
     assert get_mask_card_number(value) == expected
-
-    def test_empty_string(self):
-        with pytest.raises(IndexError):
-            get_mask_card_number("")  # Пустая строка

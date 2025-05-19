@@ -19,11 +19,14 @@ def mask_account_card(number_type: str) -> str:
 
 def get_date(user_date: str) -> str:
     """Функция преобразует входную дату и время в короткий вариант"""
+    if len(user_date) < 19:  # Проверка на длину строки, чтобы избежать IndexError
+        raise IndexError("Некорректный формат даты")
+
     return f"{user_date[8:10]}.{user_date[5:7]}.{user_date[0:4]}"
 
 
-number_type = input("Введите номер карты или счета")
+number_type = 'Счет12346700901278564356'  # введите номер счета или карты
 print(mask_account_card(number_type))
 
-user_date = input("Введите дату")
+user_date = "2018-06-30T02:08:58.425572"  # "Введите дату"
 print(get_date(user_date))

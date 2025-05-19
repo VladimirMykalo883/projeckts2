@@ -1,6 +1,7 @@
 # created by virtualenv automatically
 .idea/
 src/__pycache__/
+poetry.lock
 # Byte-compiled / optimized / DLL files
 *.py[cod]
 *$py.class

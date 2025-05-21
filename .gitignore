@@ -1,6 +1,8 @@
 # created by virtualenv automatically
 .idea/
 src/__pycache__/
+poetry.lock
+
 # Byte-compiled / optimized / DLL files
 *.py[cod]
 *$py.class
@@ -39,7 +41,6 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 # Unit test / coverage reports
-htmlcov/
 .tox/
 .nox/
 .coverage

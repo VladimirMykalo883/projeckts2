@@ -25,7 +25,7 @@ def get_date(user_date: str) -> str:
     return f"{user_date[8:10]}.{user_date[5:7]}.{user_date[0:4]}"
 
 
-number_type = 'Счет12346700901278564356'  # введите номер счета или карты
+number_type = "Счет12346700901278564356"  # введите номер счета или карты
 print(mask_account_card(number_type))
 
 user_date = "2018-06-30T02:08:58.425572"  # "Введите дату"

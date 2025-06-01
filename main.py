@@ -4,6 +4,8 @@ import src.processing
 """
 
 from src.processing import filter_by_state, sort_by_date
+# from src.generators import filter_by_currency, transaction_descriptions, card_number_generator
+
 
 """account_number = input("Введите номер счета\n")
      Печатаем маску счета

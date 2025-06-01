@@ -44,9 +44,6 @@ def sample_transactions():
     ]
 
 
-# @pytest.mark.usefixtures("transactions")
-
-
 def test_generate_transactions(sample_transactions):
     # Присваиваем результат функции
     result = list(filter_by_currency(sample_transactions, "USD"))
@@ -73,15 +70,6 @@ def test_transaction_descriptions(sample_transactions):
     assert next(generator) == "Перевод организации"
     assert next(generator) == "Отмена перевода"
     assert next(generator) == ""
-
-
-# def test_card_number_generator_invalid_range():
-# Тестируем неправильный диапазон
-#   with pytest.raises(ValueError, match="Диапазон должен быть от"):
-#       list(card_number_generator(-1, 5))  # Отрицательное число
-
-#    with pytest.raises(ValueError, match="Диапазон должен быть от"):
-#        list(card_number_generator(0, 10000000000000000))  # Слишком большое число
 
 
 def test_card_number_generator_invalid_order():

@@ -1,5 +1,6 @@
+from src.generators import card_number_generator, filter_by_currency, transaction_descriptions
 from src.processing import filter_by_state, sort_by_date
-from src.generators import filter_by_currency, transaction_descriptions, card_number_generator
+
 
 operations_list = [
     {"id": 41428829, "state": "EXECUTED", "date": "2019-07-03T18:35:29.512364"},
@@ -60,13 +61,14 @@ state_key = "EXECUTED"
 if not state_key.isalpha():
     state_key = "EXECUTED"
 # переходим в модуль processing.py с возможностью поменять ключ фильтрации
-
 filtered = filter_by_state(operations_list, state := state_key)
 
 sorted_operations = sort_by_date(filtered)
 
 for operation in sorted_operations:
     print(operation)
+
+
 # печать итераций по коду валют
 code_transactions = filter_by_currency(transactions, "USD")
 

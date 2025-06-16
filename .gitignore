@@ -1,11 +1,8 @@
 # created by virtualenv automatically
 .idea/
-.flake8
-src/__init__.py
-src/__pycache__/
+__pycache__/
 poetry.lock
-pyproject.toml
-tests/
+
 # Byte-compiled / optimized / DLL files
 *.py[cod]
 *$py.class
@@ -44,7 +41,6 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 # Unit test / coverage reports
-htmlcov/
 .tox/
 .nox/
 .coverage
